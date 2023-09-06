@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: elasticsearch-configmap
+  namespace: logging
+data:
+  DEV_ELASTICSEARCH_HOST: 'insatnce ip'
+  DEV_ELASTICSEARCH_PORT: '9200'
+  DEV_ELASTICSEARCH_INDEX: 'index name'   #'app-dev-test'
+  QA_ELASTICSEARCH_HOST: 'instance ip'
+  QA_ELASTICSEARCH_PORT: '9200'
+  QA_ELASTICSEARCH_INDEX: 'index name'    #'app-qa-test'
